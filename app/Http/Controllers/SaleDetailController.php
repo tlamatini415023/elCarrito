@@ -14,8 +14,8 @@ class SaleDetailController extends Controller
     public function index()
     {
         //
-        $sale_detail=Sale_Detail::all();
-        return view('dashboard.sale_detail.index',['sale_detail'=>$sale_detail]);
+        $sales_details=Sale_Detail::all();
+        return view('dashboard.sale_detail',['sale_detail'=>$sales_details]);
     }
 
     /**
@@ -40,7 +40,9 @@ class SaleDetailController extends Controller
      */
     public function show(Sale_Detail $sale_Detail)
     {
-        //
+        //        
+        $sales_details=Sale_Detail::all();
+        return view('dashboard.sale.sale_detail',['sale_detail'=>$sales_details]);
     }
 
     /**

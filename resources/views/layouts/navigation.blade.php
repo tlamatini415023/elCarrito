@@ -37,8 +37,18 @@
                     </x-nav-link>                    
                 </div>
                 <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                    <x-nav-link :href="url('dashboard/income_detail')" :active="request()->routeIs('income_detail')">
+                        {{ __('Detalle Ingreso') }}
+                    </x-nav-link>                    
+                </div>
+                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
                     <x-nav-link :href="url('dashboard/sale')" :active="request()->routeIs('sale')">
                         {{ __('Venta') }}
+                    </x-nav-link>
+                </div>
+                <div class="hidden space-x-8 sm:-my-px sm:ms-10 sm:flex">
+                    <x-nav-link :href="url('dashboard/sale_detail')" :active="request()->routeIs('sale_detail')">
+                        {{ __('Detalle Venta') }}
                     </x-nav-link>
                 </div>
             </div>

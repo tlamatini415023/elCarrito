@@ -13,9 +13,9 @@ class IncomeDetailController extends Controller
      */
     public function index()
     {
-        //
-        $income_detail=Income_Detail::all();
-        return view('dashboard.income_detail.index',['income_detail'=>$income_detail]);
+        //   
+        $income_details=Income_Detail::all();
+        return view('dashboard.income_detail',['income_detail'=>$income_details]);       
     }
 
     /**
@@ -23,8 +23,7 @@ class IncomeDetailController extends Controller
      */
     public function create()
     {
-        //
-        
+        //       
     }
 
     /**
@@ -38,17 +37,19 @@ class IncomeDetailController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(Income_Detail $income_Detail)
+    public function show(Income_Detail $income_details)
     {
         //
+        $income_details=Income_Detail::all();
+        return view('dashboard.income.income_detail.show',['income_detail'=>$income_details]);
     }
 
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Income_Detail $income_Detail)
+    public function edit(Income_Detail $income_details)
     {
-        //
+        //       
     }
 
     /**

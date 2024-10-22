@@ -4,12 +4,9 @@
 @section('contenido')
 <main>
     <div>
-        <h1>Editar ingreso</h1>
-        <br>
-       
+        <h1>Editar ingreso</h1> 
     </div>
 </main>
-<br>
 <div class="container py-4">
     <form action="{{url('dashboard/income/'.$income->id)}}" method="post">
         @csrf
@@ -79,8 +76,6 @@
         <br>
         <div class="form-group row">            
             <div class="col-sm-10">
-                <br>
-                <br>
                 <button type="submit" class="btn btn-info">Actualizar</button>
                 <a href="{{url('dashboard/income')}}" class="btn btn-secondary">Regresar</a>
             </div>

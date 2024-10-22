@@ -1,12 +1,12 @@
-@extends('dashboard.master')
-@section('titulo','DetalleVentas')
-@include('layouts/navigation')
-@section('contenido')
-<main>
-    <div>
-        <h1>Listado detalle de ventas</h1>
-        <br>
-        
-    </div>
-</main>
-@endsection
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+   <h1> Salut tout le monde </h1>
+</body>
+</html>

@@ -21,7 +21,8 @@
                     <th>Total</th>
                     <th>Estatus</th>
                     <th>Editar</th> 
-                    <th>Eliminar</th>                                   
+                    <th>Eliminar</th>
+                    <th>Detalle</th>                                   
                 </tr>
             </thead>
             <tbody>
@@ -46,6 +47,7 @@
                             <button class="bi bi-eraser-fill" type="submit"></button>
                         </form>                        
                     </td>
+                    <td><a href="{{url('dashboard/income/income_detail')}}"class="bi bi-bag-check-fill"></a></td>
                 </tr>
                 <tr>
                     <td scope="row"></td>
